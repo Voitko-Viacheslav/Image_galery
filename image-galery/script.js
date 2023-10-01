@@ -1,5 +1,5 @@
 import words from './searchList.js';
-import API_KEY from './key.js';
+import API_KEY from './keys.js';
 // console.log(words);
 // console.log(API_KEY);
 
