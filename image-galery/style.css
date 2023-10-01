@@ -39,13 +39,15 @@ html, body {
 .header__tittle {
     transition: .5s;
 }
-.header__tittle:hover {
+.header__tittle:hover, .subtitle:hover {
     scale: 1.1;
+    color: #fff;
 }
 
 .subtitle {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .header__search {
@@ -107,6 +109,7 @@ html, body {
 .gallery-img:hover {
     scale: .9;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .footer__wrapper {
@@ -116,6 +119,11 @@ html, body {
     align-items: center;
     background-color: goldenrod;
     padding: 0 20px;
+    transition: 0.5s;
+}
+
+.footer__wrapper:hover {
+    background-color: gold;
 }
 
 .footer__year,
@@ -134,3 +142,14 @@ html, body {
     width: 80px;
     height: 80px;
 }
+
+
+
+/*? start media  768 ____________________________________________________________*/
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/*! End media */
